@@ -1,0 +1,36 @@
+You can check, what RSync modules exits on StoreBox:
+~$ rsync --port=10874 neustorebox::
+View_BRE           Storebox BRE interface
+View_BRE_RTM       Storebox BRE RTM interface
+View_LS            Storebox LS interface
+
+This is how you list content of a folder:
+~$ rsync --port=10874 neustorebox::View_LS/PSEB/autocad/longbow/deu/px86/
+
+
+drwxr-xr-x        4096 2013/09/25 18:56:55 .
+drwxr-xr-x        4096 2013/04/15 10:09:27 J004.acad.swl.px86_01
+drwxr-xr-x        4096 2013/04/15 10:38:26 J004.acad_lp.swl.px86_01
+¡­
+¡­
+drwxr-xr-x        4096 2013/09/25 17:39:33 J030.acad.swl.px86_01
+drwxr-xr-x        4096 2013/09/25 18:56:55 J030.acad_lp.swl.px86_01
+
+For data transfer use following command (dot at the end is important a says data will be downloaded to current folder):
+~$ rsync -rtv --progress --stats --port=10874 neustorebox::View_LS/PSEB/autocad/longbow/deu/px86/J030.acad.swl.px86_01/ .
+
+ÏÂÔØ Inventor 68 build µÄÃüÃû:
+rsync -rtv --progress --stats --port=10874 --copy-dest=/cygdrive/D/Inventor2015/M19_60_x86/Setup/ sclstorebox::View_LS/MFG/inv/dyson/enu/px86/M19_68_x86/Setup/ /cygdrive/D/Inventor2015/M19_68/x86/Setup/
+
+
+rsync --port=10874 neustorebox::View_LS/PSEB/autocad_lt/longbow/deu/px86/
+
+
+rsync --port=10874 neustorebox::View_LS/MFG/inventor_eto/enlil/enu/px86/e0.0.032/SrsUnl/
+
+
+rsync -rtv --progress --stats --port=10874 --copy-dest=/cygdrive/E/InventorETO/builds/c0.0.032_enu_x86/SrsUnl/ neustorebox::View_LS/MFG/inventor_eto/enlil/enu/px86/e0.0.032/SrsUnl/ /cygdrive/E/InventorETO/builds/c0.0.032_enu_x86/SrsUnl/
+
+rsync -rtv --progress --stats --port=10874 --copy-dest=/cygdrive/E/InventorETO/builds/c0.0.032_enu_x64/SrsUnl/ neustorebox::View_LS/MFG/inventor_eto/enlil/enu/px64/e0.0.032/SrsUnl/ /cygdrive/E/InventorETO/builds/c0.0.032_enu_x64/SrsUnl/
+
+rsync -rtv --progress --stats --port=10874 --copy-dest=/cygdrive/E/InventorETO/builds/c0.0.032_enu_x64/Srv/ neustorebox::View_LS/MFG/inventor_eto/enlil/enu/px64/e0.0.032/Srv/ /cygdrive/E/InventorETO/builds/c0.0.032_enu_x64/Srv/ 

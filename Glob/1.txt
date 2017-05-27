@@ -1,0 +1,17 @@
+rsync -rtvz --delete --sparse --stats --progress --port=10874 --copy-dest=/cygdrive/E/Download/Dynamo/ sclstorebox.autodesk.com::View_LS/AEC/rce/2015/enu/px86x64/DYN_Ship_20140122_1515/ /cygdrive/E/Download/Dynamo/
+https://lsdata.autodesk.com/svn/tools/misc/JiraPDStatisticsForVendorReport
+
+
+https://lsdata.autodesk.com/svn/projectkits/Inventor/trunk/FY15/kit
+
+http://cbuild.autodesk.com:8080/job/RunAutoMasterJobUS/14274/console
+
+https://secure.autodesk.com/dana-na/auth/url_16/welcome.cgi
+
+http://clarifyweb.autodesk.com:9140/dtsthin/index.jsp?enableLinks=true
+
+
+http://dts-internal.autodesk.com
+
+INV17-2565
+INV17-2558
